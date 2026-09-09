@@ -27,7 +27,7 @@ const AboutUs = () => {
       <section className="container" style={{ paddingTop: 0 }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', alignItems: 'center', direction: 'rtl' }}>
           <div>
-            <img src="https://placehold.co/800x600?text=Double+Diamond+Staff" alt="Double Diamond Staff" style={{ borderRadius: 'var(--radius-md)' }} />
+            <img src="/images/about_girl_process.jpg" alt="Wild Rice Canada in-house packaging" style={{ borderRadius: 'var(--radius-md)' }} />
           </div>
           <div style={{ direction: 'ltr' }}>
             <h2 className="text-red">PROUD TO SUPPLY</h2>

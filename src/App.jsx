@@ -5,7 +5,7 @@ import './index.css';
 function WildRiceLogoSVG() {
   return (
     <svg
-      viewBox="0 0 520 268"
+      viewBox="0 0 520 260"
       xmlns="http://www.w3.org/2000/svg"
       className="animated-logo-svg"
       role="img"
@@ -22,8 +22,8 @@ function WildRiceLogoSVG() {
       </text>
 
       {/* Gold lines + ornament */}
-      <line x1="260" y1="66" x2="28"  y2="66" stroke="#c0a062" strokeWidth="1.5" className="logo-line-left" />
-      <line x1="260" y1="66" x2="492" y2="66" stroke="#c0a062" strokeWidth="1.5" className="logo-line-right" />
+      <line x1="260" y1="66" x2="30"  y2="66" stroke="#c0a062" strokeWidth="1.5" className="logo-line-left" />
+      <line x1="260" y1="66" x2="490" y2="66" stroke="#c0a062" strokeWidth="1.5" className="logo-line-right" />
       {/* Wheat/leaf ornament — small decorative diamond sprig */}
       <text
         x="260" y="72"
@@ -39,14 +39,14 @@ function WildRiceLogoSVG() {
         x="260" y="96"
         textAnchor="middle"
         className="logo-fade logo-delay-1"
-        style={{ fontSize: 15, fontFamily: "'Roboto', Arial, sans-serif", fill: '#0a5538', fontWeight: 700, letterSpacing: 1 }}
+        style={{ fontSize: 15, fontFamily: "'Roboto', Arial, sans-serif", fill: '#0a5538', fontWeight: 700, letterSpacing: 1.2 }}
       >
         PREMIUM ORGANIC CANADIAN WILD RICE
       </text>
 
       {/* A division of Double Diamond Farm Ltd. — italic */}
       <text
-        x="260" y="116"
+        x="260" y="117"
         textAnchor="middle"
         className="logo-fade logo-delay-1"
         style={{ fontSize: 13.5, fontFamily: "'Playfair Display', 'Times New Roman', serif", fill: '#222', fontStyle: 'italic' }}
@@ -54,42 +54,42 @@ function WildRiceLogoSVG() {
         A division of Double Diamond Farm Ltd.
       </text>
 
-      {/* Double Diamond shapes — left diamond */}
+      {/* Double Diamond shapes — symmetric, well-proportioned diamonds */}
       <polygon
-        points="28,172 188,148 258,172 188,196"
+        points="46,170 153,138 260,170 153,202"
         className="logo-diamond logo-draw logo-delay-1"
         style={{ fill: 'none', stroke: '#111', strokeWidth: 2.2, strokeLinejoin: 'miter' }}
       />
       {/* Double Diamond shapes — right diamond */}
       <polygon
-        points="262,172 332,148 492,172 332,196"
+        points="260,170 367,138 474,170 367,202"
         className="logo-diamond logo-draw logo-delay-1"
         style={{ fill: 'none', stroke: '#111', strokeWidth: 2.2, strokeLinejoin: 'miter' }}
       />
 
       {/* DOUBLE text inside left diamond */}
       <text
-        x="158" y="177"
+        x="153" y="176"
         textAnchor="middle"
         className="logo-fade logo-delay-2"
-        style={{ fontSize: 17, fontFamily: "'Roboto', Arial, sans-serif", fill: '#111', fontWeight: 700, letterSpacing: 1 }}
+        style={{ fontSize: 17, fontFamily: "'Roboto', Arial, sans-serif", fill: '#111', fontWeight: 700, letterSpacing: 1.5 }}
       >
         DOUBLE
       </text>
 
       {/* DIAMOND text inside right diamond */}
       <text
-        x="362" y="177"
+        x="367" y="176"
         textAnchor="middle"
         className="logo-fade logo-delay-2"
-        style={{ fontSize: 17, fontFamily: "'Roboto', Arial, sans-serif", fill: '#111', fontWeight: 700, letterSpacing: 1 }}
+        style={{ fontSize: 17, fontFamily: "'Roboto', Arial, sans-serif", fill: '#111', fontWeight: 700, letterSpacing: 1.5 }}
       >
         DIAMOND
       </text>
 
       {/* SASKATOON, CANADA */}
       <text
-        x="260" y="226"
+        x="260" y="232"
         textAnchor="middle"
         className="logo-fade logo-delay-2"
         style={{ fontSize: 13, fontFamily: "'Roboto', Arial, sans-serif", fill: '#0a5538', fontWeight: 700, letterSpacing: 5 }}
@@ -222,8 +222,8 @@ function App() {
           </div>
           <div>
             <img
-              alt="Wild Rice Canada — bags of wild rice ready for export"
-              src="https://worldricecanada.vercel.app/_next/image?url=%2Fimages%2Fanotherphoto.jpg&w=1920&q=75"
+              alt="Wild Rice Canada — in-house quality inspection and packaging"
+              src="/images/about_girl_process.jpg"
             />
             <div className="text-section">
               <h2 className="red-text">PROUD TO SUPPLY</h2>
@@ -282,36 +282,53 @@ function App() {
       {/* ── PRODUCTS ── */}
       <section id="products" className="main-container">
         <div className="section-label">PRODUCTS</div>
-        <div className="grid-2">
-          <div>
-            <img
-              alt="Wild Rice Canada retail packaging — premium organic Canadian wild rice"
-              src="/images/maple_leaf_og.jpeg"
-            />
+        <div className="products-grid">
+          <div className="product-card">
+            <div className="product-img-wrapper">
+              <img
+                alt="Wild Rice Canada retail packaging — 454g (1 lb) premium organic Canadian wild rice pouch"
+                src="/images/maple_leaf_og.jpeg"
+              />
+            </div>
             <div className="text-section">
               <h2 className="red-text">RETAIL PACKAGING</h2>
               <p>
-                We supply premium organic Canadian wild rice in packaging for retail, food-service,
-                wholesale and commercial customers.<br /><br />
-                <strong>RETAIL PACKAGING</strong> — Convenient packages for home use and retail customers.
+                <strong>454 g (1 lb) POUCH</strong> — Convenient resealable stand-up pouches for home use and retail grocery shelves.
               </p>
-              <div style={{ marginTop: '20px' }}>
+              <div className="buy-button-wrap">
                 <button className="buy-button" onClick={() => setIsModalOpen(true)}>Call for Pricing</button>
               </div>
             </div>
           </div>
-          <div>
-            <img
-              alt="Wild Rice Canada bulk supply — 25 KG sacks and commercial packaging"
-              src="https://worldricecanada.vercel.app/_next/image?url=%2Fimages%2Fproducts_bulk.png&w=1920&q=75"
-            />
+
+          <div className="product-card">
+            <div className="product-img-wrapper">
+              <img
+                alt="Nutrition Facts & Cooking Instructions for Canadian Wild Rice"
+                src="/images/nutrition_facts.jpg"
+              />
+            </div>
+            <div className="text-section">
+              <h2 className="red-text">NUTRITION &amp; COOKING</h2>
+              <p>
+                <strong>100% ORGANIC CANADIAN WILD RICE</strong> — High in protein, iron, and magnesium. Easy stove top &amp; rice cooker cooking instructions included on every pack.
+              </p>
+            </div>
+          </div>
+
+          <div className="product-card">
+            <div className="product-img-wrapper">
+              <img
+                alt="Wild Rice Canada bulk supply — 25 KG sacks and commercial packaging"
+                src="https://worldricecanada.vercel.app/_next/image?url=%2Fimages%2Fproducts_bulk.png&w=1920&q=75"
+              />
+            </div>
             <div className="text-section">
               <h2 className="red-text">WHOLESALE &amp; BULK SUPPLY</h2>
               <p>
-                <strong>25 KG SACKS</strong> — Larger-volume packaging for food-service, wholesale and distribution.<br /><br />
-                <strong>MINI-BULK / COMMERCIAL</strong> — Larger packaging options for commercial and export requirements.
+                <strong>25 KG SACKS</strong> — Heavy-duty sacks for food-service, wholesale, mini-bulk and commercial export requirements.
               </p>
-              <div style={{ marginTop: '20px' }}>
+              <div className="buy-button-wrap">
                 <button className="buy-button" onClick={() => setIsModalOpen(true)}>Call for Pricing</button>
               </div>
             </div>
