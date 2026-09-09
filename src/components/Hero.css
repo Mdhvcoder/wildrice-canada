@@ -1,0 +1,35 @@
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: var(--color-dark-text);
+  padding: var(--spacing-section) 0;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    min-height: 70vh;
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+}
+
+.hero-title {
+  color: var(--color-gold);
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-subtitle {
+  color: var(--color-dark-text);
+  font-size: 1.25rem;
+  max-width: 600px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
