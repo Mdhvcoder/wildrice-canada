@@ -1,105 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
-  <!-- Background -->
-  <rect width="600" height="600" fill="#FFFFFF" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Crisp White Canvas -->
+  <rect width="512" height="512" fill="#FFFFFF" />
 
-  <!-- Logo Group centered vertically -->
-  <g transform="translate(0, 70)">
-    <!-- WILD RICE CANADA -->
-    <text
-      x="300" y="110"
-      text-anchor="middle"
-      font-family="'Playfair Display', Georgia, 'Times New Roman', serif"
-      font-size="54"
-      font-weight="700"
-      fill="#8b0000"
-      letter-spacing="1"
-    >
-      WILD RICE CANADA
-    </text>
+  <!-- Double Diamond Emblem -->
+  <!-- Left Diamond -->
+  <polygon
+    points="12,256 134,180 256,256 134,332"
+    fill="#FFFFFF"
+    stroke="#0F0F0F"
+    stroke-width="14"
+    stroke-linejoin="miter"
+  />
+  <!-- Right Diamond -->
+  <polygon
+    points="256,256 378,180 500,256 378,332"
+    fill="#FFFFFF"
+    stroke="#0F0F0F"
+    stroke-width="14"
+    stroke-linejoin="miter"
+  />
 
-    <!-- Gold divider and sprig ornament -->
-    <line x1="40" y1="135" x2="270" y2="135" stroke="#bfa15f" stroke-width="2" />
-    <path d="M 300 125 C 295 130, 290 135, 300 142 C 310 135, 305 130, 300 125 Z M 290 135 C 282 135, 280 132, 285 128 C 290 132, 290 135, 290 135 Z M 310 135 C 318 135, 320 132, 315 128 C 310 132, 310 135, 310 135 Z" fill="#bfa15f" />
-    <line x1="330" y1="135" x2="560" y2="135" stroke="#bfa15f" stroke-width="2" />
-
-    <!-- PREMIUM ORGANIC CANADIAN WILD RICE -->
-    <text
-      x="300" y="172"
-      text-anchor="middle"
-      font-family="'Roboto', Arial, sans-serif"
-      font-size="18.5"
-      font-weight="700"
-      fill="#0c4a34"
-      letter-spacing="1.5"
-    >
-      PREMIUM ORGANIC CANADIAN WILD RICE
-    </text>
-
-    <!-- A division of Double Diamond Farm Ltd. -->
-    <text
-      x="300" y="210"
-      text-anchor="middle"
-      font-family="'Playfair Display', Georgia, 'Times New Roman', serif"
-      font-size="22"
-      font-style="italic"
-      fill="#222222"
-    >
-      A division of Double Diamond Farm Ltd.
-    </text>
-
-    <!-- Double Diamond shapes -->
-    <!-- Left Diamond -->
-    <polygon
-      points="55,285 180,242 300,285 180,328"
-      fill="#FFFFFF"
-      stroke="#111111"
-      stroke-width="3.5"
-      stroke-linejoin="miter"
-    />
-    <!-- Right Diamond -->
-    <polygon
-      points="300,285 420,242 545,285 420,328"
-      fill="#FFFFFF"
-      stroke="#111111"
-      stroke-width="3.5"
-      stroke-linejoin="miter"
-    />
-
-    <!-- Text inside diamonds -->
-    <text
-      x="180" y="293"
-      text-anchor="middle"
-      font-family="'Playfair Display', Georgia, 'Times New Roman', serif"
-      font-size="25"
-      font-weight="700"
-      fill="#111111"
-      letter-spacing="1"
-    >
-      DOUBLE
-    </text>
-    <text
-      x="420" y="293"
-      text-anchor="middle"
-      font-family="'Playfair Display', Georgia, 'Times New Roman', serif"
-      font-size="25"
-      font-weight="700"
-      fill="#111111"
-      letter-spacing="1"
-    >
-      DIAMOND
-    </text>
-
-    <!-- SASKATOON, CANADA -->
-    <text
-      x="300" y="370"
-      text-anchor="middle"
-      font-family="'Roboto', Arial, sans-serif"
-      font-size="19"
-      font-weight="700"
-      fill="#0c4a34"
-      letter-spacing="5.5"
-    >
-      SASKATOON, CANADA
-    </text>
-  </g>
+  <!-- Bold Clean Text -->
+  <text
+    x="134" y="266"
+    text-anchor="middle"
+    font-family="'Arial Black', 'Segoe UI Black', Impact, 'Roboto', Arial, sans-serif"
+    font-size="32"
+    font-weight="900"
+    fill="#0F0F0F"
+    letter-spacing="0.5"
+  >
+    DOUBLE
+  </text>
+  <text
+    x="378" y="266"
+    text-anchor="middle"
+    font-family="'Arial Black', 'Segoe UI Black', Impact, 'Roboto', Arial, sans-serif"
+    font-size="31"
+    font-weight="900"
+    fill="#0F0F0F"
+    letter-spacing="0.5"
+  >
+    DIAMOND
+  </text>
 </svg>
